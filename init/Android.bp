@@ -1,0 +1,15 @@
+cc_library_static {
+    name: "libinit_liuqin",
+    header_libs: [
+        "libbase_headers",
+        "libcutils_headers",
+    ],
+    cflags: [
+        "-Wall",
+    ],
+    static_libs: [
+        "libbase",
+    ],
+    srcs: ["init_liuqin.cpp"],
+    recovery_available: true,
+}

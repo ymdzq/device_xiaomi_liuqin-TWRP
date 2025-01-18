@@ -38,10 +38,14 @@ on:
         description: 'Specify your Device Makefile Name'
         required: true
         default: 'twrp_liuqin'
+        type: choice
+        options:
+        - twrp_liuqin
+        - twrp_yudi
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true
-        default: 'boot'
+        default: 'recovery'
         type: choice
         options:
         - boot

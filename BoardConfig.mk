@@ -51,6 +51,9 @@ ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/$(PRODUCT_RELEASE_NAME)/kernel
 endif
 
+# Ramdisk use lz4
+BOARD_RAMDISK_USE_LZ4 := true
+
 # A/B
 # BOARD_USES_RECOVERY_AS_BOOT := true
 AB_OTA_UPDATER := true

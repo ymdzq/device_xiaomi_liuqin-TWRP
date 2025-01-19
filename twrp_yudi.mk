@@ -43,4 +43,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 TW_FRAMERATE := 120
 
 # Kernel modules
-TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko nt36532_touch.ko msm_drm.ko qti_battery_charger_main.ko"
+TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko nt36532_touch.ko leds-qpnp-vibrator-ldo.ko msm_drm.ko qti_battery_charger_main.ko"
+
+# Haptics
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
+TW_SUPPORT_INPUT_AIDL_HAPTICS_FIX_OFF := true

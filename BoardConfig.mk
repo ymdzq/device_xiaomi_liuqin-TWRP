@@ -158,9 +158,6 @@ TW_BACKUP_EXCLUSIONS := /data/fonts,/data/adb/ap,/data/adb/ksu
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 
-# Haptics
-TW_NO_HAPTICS := true
-
 # Kernel modules
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 

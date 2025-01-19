@@ -44,3 +44,6 @@ TW_FRAMERATE := 144
 
 # Kernel modules
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko nt36532_touch.ko msm_drm.ko qti_battery_charger_main_m81.ko"
+
+# Haptics
+TW_NO_HAPTICS := true

@@ -176,21 +176,6 @@
         }
       ]
     },
-// MIUI ADD: Performance_SpeedUI
-    {
-      "Name": "MISFPerformance",
-      "Actions": [
-        {
-          "Name": "JoinCgroup",
-          "Params":
-          {
-            "Controller": "cpu",
-            "Path": "misf"
-          }
-        }
-      ]
-    },
-// END Performance_SpeedUI
     {
       "Name": "RealtimePerformance",
       "Actions": [
@@ -226,19 +211,6 @@
           {
             "Controller": "cpu",
             "Path": "camera-daemon/limit-level1"
-          }
-        }
-      ]
-    },
-    {
-      "Name": "CameraCapturePerformance",
-      "Actions": [
-        {
-          "Name": "JoinCgroup",
-          "Params":
-          {
-            "Controller": "cpu",
-            "Path": "camera-daemon/limit-level2"
           }
         }
       ]
@@ -453,34 +425,7 @@
         }
       ]
     },
-    {
-        "Name": "MultisenceCapacityLow",
-        "Actions": [
-          {
-            "Name": "JoinCgroup",
-            "Params":
-            {
-              "Controller": "cpuset",
-              "Path": "multisence-unfocus"
-            }
-          }
-        ]
-      },
-// MIUI ADD: Performance_SpeedUI
-    {
-      "Name": "ProcessCapacityMISF",
-      "Actions": [
-        {
-          "Name": "JoinCgroup",
-          "Params":
-          {
-            "Controller": "cpuset",
-            "Path": "misf"
-          }
-        }
-      ]
-    },
-// END Performance_SpeedUI
+
     {
       "Name": "ServiceCapacityLow",
       "Actions": [
@@ -507,7 +452,6 @@
         }
       ]
     },
-
     {
       "Name": "CameraServiceCapacity",
       "Actions": [
@@ -749,20 +693,6 @@
         }
       ]
     },
-    // MIUI ADD: Performance_MemoryEnhance
-    {
-      "Name": "MemoryProtectedProcess",
-      "Actions": [
-        {
-          "Name": "JoinCgroup",
-          "Params":
-          {
-            "Controller": "memory",
-            "Path": "protected-app"
-          }
-        }
-      ]
-    },
     {
       "Name": "MemoryFreezeProcess",
       "Actions": [
@@ -776,7 +706,6 @@
         }
       ]
     }
-    // END Performance_MemoryEnhance
   ],
 
   "AggregateProfiles": [
@@ -831,10 +760,6 @@
     {
       "Name": "CPUSET_SP_RESTRICTED",
       "Profiles": [ "ServiceCapacityRestricted", "TimerSlackNormal" ]
-    },
-    {
-        "Name": "CPUSET_SP_MULTISENCE_UNFOCUS",
-        "Profiles": [ "MultisenceCapacityLow" ]
     },
     {
       "Name": "Dex2OatBootComplete",

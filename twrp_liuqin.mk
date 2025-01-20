@@ -40,7 +40,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 #TARGET_SCREEN_WIDTH := 1800
 #TW_X_OFFSET := 180
 #TW_W_OFFSET := -360
-TW_FRAMERATE := 144
+TW_FRAMERATE := 120
 
 # Kernel modules
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko nt36532_touch.ko msm_drm.ko qti_battery_charger_main_m81.ko"

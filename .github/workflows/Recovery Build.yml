@@ -37,11 +37,12 @@ on:
       MAKEFILE_NAME:
         description: 'Specify your Device Makefile Name'
         required: true
-        default: 'twrp_liuqin'
+        default: 'twrp_mondrian'
         type: choice
         options:
         - twrp_liuqin
         - twrp_yudi
+        - twrp_mondrian
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true

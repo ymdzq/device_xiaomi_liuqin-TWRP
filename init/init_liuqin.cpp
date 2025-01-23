@@ -87,6 +87,8 @@ void vendor_load_properties() {
       model_property_override("liuqin", "liuqin", "Xiaomi Pad 6 Pro");
     } else if (sku == "yudi") {
       model_property_override("yudi", "yudi", "Xiaomi Pad 6 Max 14");
+    } else if (sku == "mondrian") {
+      model_property_override("mondrian", "mondrian", "Redmi K60");
 	} else {
 		model_property_override("unknow", "unknow", "unknow name");
 		return;

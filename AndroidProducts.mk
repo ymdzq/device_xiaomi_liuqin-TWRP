@@ -7,7 +7,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_liuqin.mk \
-    $(LOCAL_DIR)/twrp_yudi.mk
+    $(LOCAL_DIR)/twrp_yudi.mk \
+    $(LOCAL_DIR)/twrp_mondrian.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_liuqin-user \
@@ -15,4 +16,7 @@ COMMON_LUNCH_CHOICES := \
     twrp_liuqin-eng \
     twrp_yudi-user \
     twrp_yudi-userdebug \
-    twrp_yudi-eng
+    twrp_yudi-eng \
+    twrp_mondrian-user \
+    twrp_mondrian-userdebug \
+    twrp_mondrian-eng

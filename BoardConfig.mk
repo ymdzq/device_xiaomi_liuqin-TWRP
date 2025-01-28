@@ -161,6 +161,9 @@ TARGET_USES_LOGD := true
 # Kernel modules
 TW_LOAD_VENDOR_MODULES_EXCLUDE_GKI := true
 
+# THP fix
+TW_XIAOMI_TOUCH_PERMISSION_FIX := true
+
 # Theme
 TW_STATUS_ICONS_ALIGN := center
 

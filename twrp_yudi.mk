@@ -41,6 +41,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 #TW_X_OFFSET := 180
 #TW_W_OFFSET := -360
 TW_FRAMERATE := 120
+TW_ROTATION := 270
 
 # Kernel modules
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko nt36532_touch.ko leds-qpnp-vibrator-ldo.ko msm_drm.ko qti_battery_charger_main.ko"

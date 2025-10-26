@@ -42,6 +42,8 @@ TW_H_OFFSET := -99
 # Kernel modules
 TW_LOAD_VENDOR_MODULES := "adsp_loader_dlkm.ko goodix_core.ko leds-qpnp-vibrator-ldo.ko msm_drm.ko qti_battery_charger_main_m81.ko"
 
+TW_XIAOMI_TOUCH_RMMOD_GOODIX_CORE := true
+
 # Haptics
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 TW_SUPPORT_INPUT_AIDL_HAPTICS_FQNAME := "IVibrator/vibratorfeature"
